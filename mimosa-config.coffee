@@ -1,5 +1,5 @@
 exports.config =
-  modules: ["server","browserify","lint","live-reload","bower"]
+  modules: ["server","browserify@0.1.1","lint","live-reload","bower"]
   template: amdWrap: false
   browserify:
     bundles:
