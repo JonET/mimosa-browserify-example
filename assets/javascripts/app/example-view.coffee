@@ -1,11 +1,11 @@
-$    = require 'jquery'
-dust = require '../vendor/dust'
+$           = require 'jquery'
+templates   = require 'templates'
 
 class ExampleView
   render: (element) ->
-    dust.render 'example', {name:'Dust', css:'stylus'}, (err, out) ->
+    templates.render 'example', {name:'Dust', css:'stylus'}, (err, out) ->
       $(element).append out
-    dust.render 'another-example', {name:'Dust'}, (err, out) ->
+    templates.render 'another-example', {name:'Dust'}, (err, out) ->
       $(element).append out
 
 module.exports = ExampleView

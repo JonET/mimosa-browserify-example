@@ -10,7 +10,12 @@ exports.config =
     shims:
       templates:
         path: 'javascripts/templates'
-        exports: null
+        exports: 'dust'
+        depends:
+          dust: 'dust'
       jquery:
         path: 'javascripts/vendor/jquery/jquery'
         exports: '$'
+    aliases:
+      dust: 'javascripts/vendor/dust'
+      templates: 'javascripts/templates'
