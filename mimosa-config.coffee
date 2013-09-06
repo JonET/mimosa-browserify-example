@@ -1,6 +1,8 @@
 exports.config =
   modules: ["server","browserify@0.1.1","lint","live-reload","bower"]
-  template: amdWrap: false
+  template:
+    wrapType: 'common'
+    commonLibPath: 'dust'
   browserify:
     bundles:
       [
@@ -8,11 +10,6 @@ exports.config =
         outputFile: 'bundle.js'
       ]
     shims:
-      templates:
-        path: 'javascripts/templates'
-        exports: 'dust'
-        depends:
-          dust: 'dust'
       jquery:
         path: 'javascripts/vendor/jquery/jquery'
         exports: '$'
