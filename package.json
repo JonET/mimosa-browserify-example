@@ -1,7 +1,7 @@
 {
   "name": "mimosa-browserify-example",
   "version": "0.0.1",
-  "author": "Jon Taylor",
+  "author": "",
   "description": "Mimosa default project reworked for browserify.",
   "dependencies": {
     "express": "3.3.4",
