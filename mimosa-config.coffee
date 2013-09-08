@@ -1,4 +1,5 @@
 exports.config =
+  mimMimosaVersion:'1.0.0-rc.4'
   modules: ["server","browserify@0.1.1","lint","live-reload","bower"]
   template:
     wrapType: 'common'
