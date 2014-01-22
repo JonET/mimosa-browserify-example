@@ -1,5 +1,15 @@
 exports.config =
-  modules: ["server","browserify","lint","live-reload","bower"]
+  modules: [
+    "server"
+    "browserify"
+    "jshint"
+    "csslint"
+    "live-reload"
+    "bower"
+    "coffeescript"
+    "stylus"
+    "dust"
+    "copy"]
   template:
     wrapType: 'common'
     commonLibPath: 'dust'
